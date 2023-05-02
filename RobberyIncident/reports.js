@@ -305,10 +305,11 @@ function report() {
 	let medneedsus = document.getElementById('medneedsus').value;
 	let medneedpd = document.getElementById('medneedpd').value;
 	let hospitalname = document.getElementById('hospitalname').value;
+	let doctorname = document.getElementById('doctorname').value;
 	if (document.getElementById('cend').checked) {
 		if (document.getElementById('medneed').checked) {
 			buffer.push(`[MEDICAL ATTENTION]:`);
-			buffer.push(`After we apprehended the suspects, they were in need of medical attention. We brought the injured people (Suspects Total: ${medneedsus} | PD Total: ${medneedpd}) to ${hospitalname}.`);
+			buffer.push(`After we apprehended the suspects, they were in need of medical attention. We brought the injured people (Suspects Total: ${medneedsus} | PD Total: ${medneedpd}) to ${hospitalname}. and they were treated by ${doctorname}.`);
 			buffer.push(`Once everyone got medical treatment, we started heading back towards the PD.`)
 		} else {
 			buffer.push(`[MEDICAL ATTENTION]:`);

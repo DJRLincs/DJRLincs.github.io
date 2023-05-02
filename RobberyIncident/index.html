@@ -132,13 +132,13 @@
 		<div class="lineup">
 			<label style="text-align: left;">Pursuit Order:</label>
 			Primary: <input type="text" autocomplete="on" list="roster" id="primary" name="primary" placeholder="[RANK] Name">
-			Passenger: <input type="text" autocomplete="on" list="roster" id="primaryp" name="primaryp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bike-Unit (Optional): <input type="text" autocomplete="on" list="roster" id="bikeunit" name="bikeunit" placeholder="[XX-XXX] Name"><br />
+			Passenger: <input type="text" autocomplete="on" list="roster" id="primaryp" name="primaryp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bike-Unit (Optional): <input type="text" autocomplete="on" list="roster" id="bikeunit" name="bikeunit" placeholder="[RANK] Name"><br />
 			Secondary: <input type="text" autocomplete="on" list="roster" id="secondary" name="secondary" placeholder="[RANK] Name">
 			Passenger: <input type="text" autocomplete="on" list="roster" id="secondaryp" name="secondaryp" placeholder="[RANK] Name"><br />
-			Tertiary: <input type="text" autocomplete="on" list="roster" id="tertiary" name="tertiary" placeholder="[XX-XXX] Name"> 
+			Tertiary: <input type="text" autocomplete="on" list="roster" id="tertiary" name="tertiary" placeholder="[RANK] Name"> 
 			Passenger: <input type="text" autocomplete="on" list="roster" id="tertiaryp" name="tertiaryp" placeholder="[RANK] Name">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Air-1 (Optional): <input type="text" autocomplete="on" list="roster" id="airunit" name="airunit" placeholder="Probably Johnson"><br />
 			Parallel: <input type="text" autocomplete="on" list="roster" id="parallel" name="parallel" placeholder="[RANK] Name"> 
-			Passenger: <input type="text" autocomplete="on" list="roster" id="parallelp" name="parallelp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Co-Pilot (Optional): <input type="text" autocomplete="on" list="roster" id="airp" name="airp" placeholder="[XX-XXX] Name"><br />	
+			Passenger: <input type="text" autocomplete="on" list="roster" id="parallelp" name="parallelp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Co-Pilot (Optional): <input type="text" autocomplete="on" list="roster" id="airp" name="airp" placeholder="[RANK] Name"><br />	
 		</div>
 		<div class="form-group">
 			<label>Robbery Type:</label>
@@ -355,23 +355,37 @@
 				<option>12</option>
 			</select><br />
 			Which hospital? <select id="hospitalname">
-				<option selected>Saint Fiacre</option>
-				<option>Mount Zonah</option>
-				<option>Sandy Shores Medical</option>
-				<option>Paleto Hospital</option>
-				<option>Cayo Perico</option>
+				<option selected></option>
+				<option>Blackwater Doctor's Office</option>
+				<option>Strawberry Doctor's Office</option>
+				<option>Valentine Doctor's Office</option>
+				<option>Saint Denis Doctor's Office</option>
+				<option>Rhodes Doctor's Office</option>
+				<option>Valentine Doctor's Office</option>
+				<option>Annesberg Doctor's Office</option>
+				<option>Armadillo Doctor's Office</option>
+				<option>Tumbleweed Doctor's Office</option>
 			</select>
-			<br />
+			<label>Which Doctor?</label>
+				<input type="text" autocomplete="off" id="doctorname" name="Doctor" placeholder="[Title] Name"><br />
+			</select>
+			<br/>
 			<input type="checkbox" id="runhospital" name="runhospital" value="runhospital"> - Check if Attempted to flee at hospital
 		</div>
 		<div class="form-group">
 			<label>Processed at...</label>
 			<select id="processedat">
-				<option selected>MRPD</option>
-				<option>Sandy Shores Sheriff's Office</option>
-				<option>Davis PD</option>
-				<option>Paleto Police Department</option>
-				<option>Highway Police Department</option>
+				<option selected></option>
+				<option>Blackwater Sheriff's Office</option>
+				<option>Strawberry Sheriff's Office</option>
+				<option>Valentine Sheriff's Office</option>
+				<option>Saint Denis Police Station</option>
+				<option>Rhodes Sheriff's Office</option>
+				<option>Valentine Sheriff's Office</option>
+				<option>Annesberg Sheriff's Office</option>
+				<option>Armadillo Sheriff's Office</option>
+				<option>Tumbleweed Sheriff's Office</option>
+
 			</select>
 		</div>
 		<div>
