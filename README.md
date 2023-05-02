@@ -10,7 +10,8 @@
   
   <a href="https://github.com/DJRLincs/DJRLincs.github.io/commits/master">
     <img src="https://img.shields.io/github/last-commit/DJRLincs/DJRLincs.github.io?logo=GitHub&style=for-the-badge">
-  </a>
+</a>
+
 
 <a href="https://github.com/DJRLincs/DJRLincs.github.io/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=DJRLincs/DJRLincs.github.io" />
