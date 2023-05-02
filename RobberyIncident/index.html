@@ -27,7 +27,7 @@
 <body>
     
     <div id="form">
-		<datalist id="roster">
+		<!--<datalist id="roster">
 			<option value="[X-100] Holden Steele">Chief</option>
 			<option value="[X-101] Aniyah Diem">Assistant Chief</option>
 			<option value="[X-102] Curtis Roscoe">Deputy Chief</option>
@@ -122,23 +122,23 @@
 			<option value="[T-633] Vanessa Knight">Trooper</option>
 			<option value="[T-690] Araya Kais">Trooper</option>
 			<option value="[TA-703] Dempsey Watson">Cadet | SASP</option>
-		</datalist>
+		</datalist> -->
 		<div class="form-group">
 			<label>Assignment:</label>
-			Scene command: <input type="text" autocomplete="on" list="roster" id="scenecommand" name="scenecommand" placeholder="[XX-XXX] Name"><br />
-			Negotiator: <input type="text" autocomplete="on" list="roster" id="negotiator" name="negotiator" placeholder="[XX-XXX] Name"><br />
-			Who stayed back for hostage: <input type="text" autocomplete="on" list="roster" id="hostagestayer" name="hostagestayer" placeholder="[XX-XXX] Name">
+			Scene command: <input type="text" autocomplete="on" list="roster" id="scenecommand" name="scenecommand" placeholder="[RANK] Name"><br />
+			Negotiator: <input type="text" autocomplete="on" list="roster" id="negotiator" name="negotiator" placeholder="[RANK] Name"><br />
+			Who stayed back for hostage: <input type="text" autocomplete="on" list="roster" id="hostagestayer" name="hostagestayer" placeholder="[RANK] Name">
 		</div>
 		<div class="lineup">
 			<label style="text-align: left;">Pursuit Order:</label>
-			Primary: <input type="text" autocomplete="on" list="roster" id="primary" name="primary" placeholder="[XX-XXX] Name">
-			Passenger: <input type="text" autocomplete="on" list="roster" id="primaryp" name="primaryp" placeholder="[XX-XXX] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bike-Unit (Optional): <input type="text" autocomplete="on" list="roster" id="bikeunit" name="bikeunit" placeholder="[XX-XXX] Name"><br />
-			Secondary: <input type="text" autocomplete="on" list="roster" id="secondary" name="secondary" placeholder="[XX-XXX] Name">
-			Passenger: <input type="text" autocomplete="on" list="roster" id="secondaryp" name="secondaryp" placeholder="[XX-XXX] Name"><br />
+			Primary: <input type="text" autocomplete="on" list="roster" id="primary" name="primary" placeholder="[RANK] Name">
+			Passenger: <input type="text" autocomplete="on" list="roster" id="primaryp" name="primaryp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bike-Unit (Optional): <input type="text" autocomplete="on" list="roster" id="bikeunit" name="bikeunit" placeholder="[XX-XXX] Name"><br />
+			Secondary: <input type="text" autocomplete="on" list="roster" id="secondary" name="secondary" placeholder="[RANK] Name">
+			Passenger: <input type="text" autocomplete="on" list="roster" id="secondaryp" name="secondaryp" placeholder="[RANK] Name"><br />
 			Tertiary: <input type="text" autocomplete="on" list="roster" id="tertiary" name="tertiary" placeholder="[XX-XXX] Name"> 
-			Passenger: <input type="text" autocomplete="on" list="roster" id="tertiaryp" name="tertiaryp" placeholder="[XX-XXX] Name">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Air-1 (Optional): <input type="text" autocomplete="on" list="roster" id="airunit" name="airunit" placeholder="Probably Johnson"><br />
-			Parallel: <input type="text" autocomplete="on" list="roster" id="parallel" name="parallel" placeholder="[XX-XXX] Name"> 
-			Passenger: <input type="text" autocomplete="on" list="roster" id="parallelp" name="parallelp" placeholder="[XX-XXX] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Co-Pilot (Optional): <input type="text" autocomplete="on" list="roster" id="airp" name="airp" placeholder="[XX-XXX] Name"><br />	
+			Passenger: <input type="text" autocomplete="on" list="roster" id="tertiaryp" name="tertiaryp" placeholder="[RANK] Name">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Air-1 (Optional): <input type="text" autocomplete="on" list="roster" id="airunit" name="airunit" placeholder="Probably Johnson"><br />
+			Parallel: <input type="text" autocomplete="on" list="roster" id="parallel" name="parallel" placeholder="[RANK] Name"> 
+			Passenger: <input type="text" autocomplete="on" list="roster" id="parallelp" name="parallelp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Co-Pilot (Optional): <input type="text" autocomplete="on" list="roster" id="airp" name="airp" placeholder="[XX-XXX] Name"><br />	
 		</div>
 		<div class="form-group">
 			<label>Robbery Type:</label>
