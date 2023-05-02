@@ -11,14 +11,14 @@
 </head>
 <header>
 	<br />
-    <div class="headerbuttons"><a href="https://DJRLincs.github.io/vehicleholdreport/" target="_blank" class="button">PD Impound Generator</a> &nbsp <a href="https://DJRLincs.github.io/" class="button">Back to HUB</a>
-	</div>
+    <!-- <div class="headerbuttons"><a href="https://DJRLincs.github.io/Horseholdreport/" target="_blank" class="button">PD Impound Generator</a> &nbsp <a href="https://DJRLincs.github.io/" class="button">Back to HUB</a>
+	</div> -->
 	<br />
-	10-90 Robbery Incident Report Generator V2<br />
+	Robbery Incident Report Generator V2<br />
 	<!--<buttonsasp onclick="saspchange()">SASP</buttonsasp> &nbsp&nbsp&nbsp <buttonbcso onclick="bcsochange()">BCSO</buttonbcso> &nbsp&nbsp&nbsp <buttonsahp onclick="sahpchange()">SAHP</buttonsahp>-->
 	<br />
-	<label class="inline" style="font-size: 14px;">Your Callsign & Name:</label><br />
-    <input type="text" autocomplete="on" list="roster" id="yourself" name="yourself" placeholder="[SF-202] Thomas Sucher"/><br />
+	<label class="inline" style="font-size: 14px;">Your Rank & Name:</label><br />
+    <input type="text" autocomplete="on" list="roster" id="yourself" name="yourself" placeholder="Senior Deputy John Rose"/><br />
 	<div class="popup" id="copyReport">
 		<div class="btn" title="Copy the generated report to your clipboard">Copy The Report</div> <span class="popuptext" id="myPopup">Report copied!</span>
 	</div>
@@ -132,13 +132,12 @@
 		<div class="lineup">
 			<label style="text-align: left;">Pursuit Order:</label>
 			Primary: <input type="text" autocomplete="on" list="roster" id="primary" name="primary" placeholder="[RANK] Name">
-			Passenger: <input type="text" autocomplete="on" list="roster" id="primaryp" name="primaryp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bike-Unit (Optional): <input type="text" autocomplete="on" list="roster" id="bikeunit" name="bikeunit" placeholder="[XX-XXX] Name"><br />
 			Secondary: <input type="text" autocomplete="on" list="roster" id="secondary" name="secondary" placeholder="[RANK] Name">
-			Passenger: <input type="text" autocomplete="on" list="roster" id="secondaryp" name="secondaryp" placeholder="[RANK] Name"><br />
+			<!-- Passenger: <input type="text" autocomplete="on" list="roster" id="secondaryp" name="secondaryp" placeholder="[RANK] Name"><br />
 			Tertiary: <input type="text" autocomplete="on" list="roster" id="tertiary" name="tertiary" placeholder="[XX-XXX] Name"> 
 			Passenger: <input type="text" autocomplete="on" list="roster" id="tertiaryp" name="tertiaryp" placeholder="[RANK] Name">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Air-1 (Optional): <input type="text" autocomplete="on" list="roster" id="airunit" name="airunit" placeholder="Probably Johnson"><br />
 			Parallel: <input type="text" autocomplete="on" list="roster" id="parallel" name="parallel" placeholder="[RANK] Name"> 
-			Passenger: <input type="text" autocomplete="on" list="roster" id="parallelp" name="parallelp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Co-Pilot (Optional): <input type="text" autocomplete="on" list="roster" id="airp" name="airp" placeholder="[XX-XXX] Name"><br />	
+			Passenger: <input type="text" autocomplete="on" list="roster" id="parallelp" name="parallelp" placeholder="[RANK] Name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Co-Pilot (Optional): <input type="text" autocomplete="on" list="roster" id="airp" name="airp" placeholder="[XX-XXX] Name"><br />	-->
 		</div>
 		<div class="form-group">
 			<label>Robbery Type:</label>
@@ -224,21 +223,15 @@
 			<label for="fpassagensp">free passage with no spikes on perimeter</label><br />
 			<input type="checkbox" id="fpassagensf" name="fpassagensf" value="fpassagensf" />
 			<label for="fpassagensf">free passage with no spikes on the whole chase</label><br />
-			<input type="checkbox" id="nair" name="nair" value="nair" />
-			<label for="nair">no helicopter</label><br />
-			<input type="checkbox" id="nspeed" name="nspeed" value="nspeed" />
-			<label for="nspeed">no speed unit</label><br />
-			<input type="checkbox" id="nbike" name="nbike" value="nbike" />
-			<label for="nbike">no bike unit</label><br />
 			Other:<br />
 			<textarea id="otherdemands" name="otherdemands" placeholder="Anything else they demanded, or if they dropped a weapon for a demand"></textarea>
 		</div>
 		<div class="form-group">
-			<label>Vehicle Information:</label>
-			Description: <input type="text" id="vehicledesc" name="vehicledesc" placeholder="Probably a Mustang"><br />
+			<label>Horse Information:</label>
+			Description: <input type="text" id="Horsedesc" name="Horsedesc" placeholder="Probably a Mustang"><br />
 			Color: <input type="text2" id="carcolor" name="carcolor" placeholder="Blue"><br />
-			Plate: <input type="text2" id="vehicleplate" name="vehicleplate" placeholder="12ABC345"><br />
-			Registered To: <input type="text" id="vehiclereg" name="vehiclereg" placeholder="FirstName LastName">
+			Plate: <input type="text2" id="Horseplate" name="Horseplate" placeholder="12ABC345"><br />
+			Registered To: <input type="text" id="Horsereg" name="Horsereg" placeholder="FirstName LastName">
 		</div>
 		<div class="form-group">
 			<label>How did the chase end? Did they get caught?</label>
@@ -248,66 +241,65 @@
 				<option>Suspects caught | General Ending</option>
 				<option>Surrendered | General Ending</option>
 				<option></option>
-				<option>Got out of vehicle | Ran on foot | Caught</option>
-				<option>Got out of vehicle | Ran on foot | Escaped</option>
+				<option>Got off horse | Ran on foot | Caught</option>
+				<option>Got off horse| Ran on foot | Escaped</option>
 				<option></option>
-				<option>Vehicle disabled | Ran on foot | Caught</option>
-				<option>Vehicle disabled | Ran on foot | Escaped</option>
-				<option>Vehicle disabled | Vehicle swap | Caught</option>
-				<option>Vehicle disabled | Vehicle swap | Escaped</option>
-				<option>Vehicle disabled | Surrendered</option>
+				<option>Horse killed | Ran on foot | Caught</option>
+				<option>Horse killed | Ran on foot | Escaped</option>
+				<option>Horse killed | Horse swap | Caught</option>
+				<option>Horse killed | Horse swap | Escaped</option>
+				<option>Horse killed | Surrendered</option>
 				<option></option>
-				<option>Vehicle boxed in | Ran on foot | Caught</option>
-				<option>Vehicle boxed in | Ran on foot | Escaped</option>
-				<option>Vehicle boxed in | Surrendered</option>
+				<option>Horse boxed in | Ran on foot | Caught</option>
+				<option>Horse boxed in | Ran on foot | Escaped</option>
+				<option>Horse boxed in | Surrendered</option>
 				<option></option>
-				<option>Attempted Vehicle swap | Caught</option>
-				<option>Vehicle swap x1 | Caught</option>
-				<option>Vehicle swap x1 | Escaped</option>
-				<option>Vehicle swap x2 | Caught</option>
-				<option>Vehicle swap x2 | Escaped</option>
-				<option>Vehicle swap x3 | Caught</option>
-				<option>Vehicle swap x3 | Escaped</option>
+				<option>Attempted Horse swap | Caught</option>
+				<option>Horse swap x1 | Caught</option>
+				<option>Horse swap x1 | Escaped</option>
+				<option>Horse swap x2 | Caught</option>
+				<option>Horse swap x2 | Escaped</option>
+				<option>Horse swap x3 | Caught</option>
+				<option>Horse swap x3 | Escaped</option>
 				<option></option>
 				<option>Bike swap | Caught</option>
 				<option>Bike swap | Escaped</option>
 				<option></option>
-				<option>Vehicle ran out of fuel | Ran on foot | Transfer vehicle | Caught</option>
-				<option>Vehicle ran out of fuel | Ran on foot | Transfer vehicle | Escaped</option>
-				<option>Vehicle ran out of fuel | Ran on foot | Caught</option>
-				<option>Vehicle ran out of fuel | Ran on foot | Escaped</option>
-				<option>Vehicle ran out of fuel | Surrendered</option>
+				<option>Horse ran out of Stamina | Ran on foot | Transfer Horse | Caught</option>
+				<option>Horse ran out of Stamina | Ran on foot | Transfer Horse | Escaped</option>
+				<option>Horse ran out of Stamina | Ran on foot | Caught</option>
+				<option>Horse ran out of Stamina | Ran on foot | Escaped</option>
+				<option>Horse ran out of Stamina | Surrendered</option>
 				<option></option>
-				<option>Vehicle turtled | Ran on foot | Transfer vehicle | Caught</option>
-				<option>Vehicle turtled | Ran on foot | Transfer vehicle | Escaped</option>
-				<option>Vehicle turtled | Ran on foot | Caught</option>
-				<option>Vehicle turtled | Ran on foot | Escaped</option>
-				<option>Vehicle turtled | Surrendered</option>
+				<option>Horse turtled | Ran on foot | Transfer Horse | Caught</option>
+				<option>Horse turtled | Ran on foot | Transfer Horse | Escaped</option>
+				<option>Horse turtled | Ran on foot | Caught</option>
+				<option>Horse turtled | Ran on foot | Escaped</option>
+				<option>Horse turtled | Surrendered</option>
 				<option></option>
-				<option>Vehicle was sent into water | Caught</option>
-				<option>Vehicle was sent into water | Escaped</option>
+				<option>Horse was fell into water | Caught</option>
+				<option>Horse was fell into water | Escaped</option>
 				<option></option>
-				<option>Vehicle blew up</option>
+				<option>Horse Crashed</option>
 				<option></option>
-				<option>Vehicle took a jump | Escaped</option>
+				<option>Horse took a jump | Escaped</option>
 				<option></option>
-				<option>Suspects opened fire from the vehicle | Caught</option>
-				<option>Suspects opened fire from the vehicle | Escaped</option>
+				<option>Suspects opened fire from the Horse | Caught</option>
+				<option>Suspects opened fire from the Horse | Escaped</option>
 				<option></option>
 				<option>Turned into a shootout | All Caught</option>
 				<option>Turned into a shootout | All Escaped</option>
 				<option></option>
-				<option>Secondary Vehicle Blocked Units | Escaped</option>
+				<option>Secondary Horse Blocked Other Deputies | Escaped</option>
 				<option></option>
-				<option>Vehicle 10-50 | Suspects went down</option>
-				<option></option>
+		
 				<option>Bike disabled | Ran on foot | Caught</option>
 				<option>Bike disabled | Ran on foot | Escaped</option>
 				<option>Bike disabled | Surrendered</option>
 				<option>Fell off bike | Ran on foot | Caught</option>
 				<option>Fell off bike | Ran on foot | Escaped</option>
-				<option>Fell off bike | Vehicle Swap | Caught</option>
-				<option>Fell off bike | Vehicle Swap | Escaped</option>
+				<option>Fell off bike | Horse Swap | Caught</option>
+				<option>Fell off bike | Horse Swap | Escaped</option>
 				<option>Fell off bike | Surrendered</option>
 			</select>
 		</div>
